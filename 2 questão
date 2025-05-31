@@ -1,5 +1,6 @@
 int main(void) {
-    int num;
+   int main() {
+     int num;
     
     printf("Informe um número: ");
     scanf("%d" , &num);
@@ -9,9 +10,6 @@ int main(void) {
         printf("O número é impar. \n");
     
     
-    }
-    
-    
-
     return 0;
+ }
 }
