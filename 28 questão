@@ -1,32 +1,43 @@
-float total, valorfinal;
-    int opcao, parcelas, i;
-
-    printf("Valor total gasto: R$ ");
-    scanf("%f", &total);
-
-    printf("1 - À vista (10%% de desconto)");
-    printf("2 - 2 vezes (sem juros)");
-    printf("3 - 3 a 10 vezes (3%% ao mês, só acima de R$100)");
-    printf("Opção: ");
-    scanf("%d", &opcao);
-
-    if (opcao == 1)
-        printf("Total com desconto: R$ %.2f\n", total * 0.9);
-
-    else if (opcao == 2)
-        printf("2x de R$ %.2f\n", total / 2);
-
-    else if (opcao == 3 && total > 100) {
-        printf("Número de parcelas (3 a 10): ");
-        scanf("%d", &parcelas);
-
-        if (parcelas >= 3 && parcelas <= 10) {
-            valorfinal = total;
-            for (i = 0; i < parcelas; i++)
-                valorfinal *= 1.03;
-            printf("%dx de R$ %.2f (Total: R$ %.2f)", parcelas, valorfinal / parcelas, valorfinal);
-        } else
-            
-    return 0;
+int main(void) {
+    
+    float valor, valorfinal;
+    int opção;
+    
+    printf("Informe o valor da compra: ");
+    scanf("%f", &valor);
+    
+    if(valor < 100) {
+    printf("\n Escolha uma opção de pagamento: ");
+    printf("\n 1 - À vista (10%% de desconto: ");
+    printf("\n 2 - em duas vezes (preço da etiqueta): ");
+    scanf("%d", &opção);
+    
+    if(opção == 1) {
+    valorfinal = valor - (valor * 0.1);
+    printf("O que valor que você irá pagar será de: %f", valorfinal);
+    }
+    
+if(opção == 2) {
+    valorfinal = valor/2;
+    printf("O que valor que você irá pagar será de: %f", valorfinal);
+}
+ if(valor >= 100) {
+     printf("\n Escolha uma opção de pagamento: ");
+    printf("\n 1 - À vista (10%% de desconto: ");
+    printf("\n 2 - em duas vezes (preço da etiqueta): ");
+    printf("\n 3 - 3 até 10 vezes com 3%% de juros ao mês ( somente para compras acima de R$100,00: ");
+    scanf("%d", &opção);
+    
  }
+ 
+ if(opção == 1) {
+    valorfinal = valor - (valor * 0.1);
+    printf("O que valor que você irá pagar será de: %f", valorfinal);
+    }
+    
+if(opção == 2) {
+    valorfinal = valor/2;
+    printf("O que valor que você irá pagar será de: %f", valorfinal);
+}
+    return 0;
 }
