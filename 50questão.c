@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     printf("Bem-vindo(a) a Imobiliária Central! \n");
     
