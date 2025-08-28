@@ -1,3 +1,5 @@
+#include <stdio.h>
+int main() {
 int p1, in;
 printf("Insira o preço do produto:");
 scanf("%d", &p1);{
