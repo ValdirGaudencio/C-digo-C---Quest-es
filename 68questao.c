@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int matriz[2][2];
+    int i, j, temp;
+
+    printf("Digite os elementos da matriz 2x2:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    for (j = 0; j < 2; j++) {
+        temp = matriz[0][j];
+        matriz[0][j] = matriz[1][j];
+        matriz[1][j] = temp;
+    }
+
+    printf("\nMatriz apos trocar as linhas:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d\t", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
