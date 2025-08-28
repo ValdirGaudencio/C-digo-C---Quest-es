@@ -1,4 +1,6 @@
- int nota1, nota2, nota3, nota4, nota5, nota6, peso1, peso2, peso3, peso4, peso5, peso6;
+#include <stdio.h>
+int main() {
+int nota1, nota2, nota3, nota4, nota5, nota6, peso1, peso2, peso3, peso4, peso5, peso6;
     int soma_ponderada, soma_pesos, media_ponderada;
 
     printf("Digite a primeira nota: ");
