@@ -1,3 +1,5 @@
+#include <stdio.h>
+int main() {
 char nome[20], endereço[10];
 int telefone, idade;
 
