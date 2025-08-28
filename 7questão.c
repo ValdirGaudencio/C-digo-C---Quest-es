@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     int prim, segun, terc;
     printf("Informe o primeiro número: ");
