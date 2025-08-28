@@ -1,4 +1,6 @@
- int main() {
+#include <stdio.h>
+
+int main() {
     int ano;
 
     printf("Informe o ano: ");
