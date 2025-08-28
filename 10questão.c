@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main() {
     int med1, med2, med3;
     printf("Informe a primeira medida: ");
