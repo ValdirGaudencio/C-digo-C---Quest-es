@@ -1,4 +1,6 @@
 int main() {
+    #include <stdio.h>
+
 int num1, num2, num3, num4, num5, num6, soma, media;
     printf("Digite o primeiro número: ");
     scanf( "%d", &num1);
