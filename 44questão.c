@@ -1,4 +1,7 @@
+#include <stdio.h>
+
 int main(void) {
+    
     float num1, num2, num3;
     printf("Insira o valor 1: ");
     scanf("%f", &num1);
